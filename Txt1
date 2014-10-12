@@ -1,0 +1,92 @@
+Things to add, damage control.
+
+Abilities, attack speed, ui
+
+De ridge the map, work on culling.
+
+Re sizeable text box, botBox should have 5 lines.
+Scrolling text box.
+
+Health drawing.
+
+Player collision detection for walls.
+
+Path finding needs updates:
+can't walk diagonal if you can't walk both adjacent horizontal.
+can approach blocks from different angles and can only exit from specific ones.
+when player walks it cancels path movement.
+
+
+Fix diagonal check with pathfinding so it checks an array that specifically explains
+ which blocks can be diagonally walked into and out of.
+ 
+save click location and button click 
+ and then during the next tick have it do the appropriate checks so clicking can't 
+ fuck stuff up when it is out of order.
+ 
+ 
+When mine a node have it be depleted till it regenerates
+ HOW DO DEAL WITH RESOURCE NODES
+ 
+ 
+ 	// I should make a chat bar at the bottom, like a console.
+	// first make it so you print to it, then have it so you can type to it.
+
+	// Character can diagonally walk off top of screen.
+
+	// If button above inventory pressed the drwGm for g3 stops drawing the invs
+	// and draws stats instead because of an if-else-if statement.
+
+	// Have a special in game. For one day, 24 hours. every time a boss is
+	// killed
+	// something happens. Or every time a mob is given spider tongues he
+	// increases
+	// in size by .05% or sumptin. The server with the largest mob has the mob
+	// then go on a world wide rampage and drop epic loots
+
+	// When moving daig. the player can walk into the corner of blocks.
+	// But that wont matter when i install A* pathfinding.
+
+	// how deal with a second map checker. No still just check one map but make
+	// it draw the bot ground ad the wall map
+
+
+
+Other mobs
+
+
+if the player can not exit the north block to the east then it can not walk
+ north east.
+
+
+remember the mineloc when trying to mine.
+When wantToMine is set to true remember where the mineNode is.
+
+
+If click on node in melee range then have the player just mine instead
+ of walk then mine. well as of now it doesn't even do anything
+
+
+When pathfinding to ore make sure that diagonal movement count as 1.5 the
+ adjacent movement
+
+Drop down when there is no a 2nd button it still seems to think that there is.
+
+Right click button for mine, have it so if there is no above right click then
+ the button shuffles up
+
+It doesn't need to replace the tempButs every tick, just needs to make it once
+ and redraw it. If it doesnt need to draw the set it to null. 
+
+
+Make it open door when it gets into melee range like the ore. Make open door
+ be the first drop so when you leftclick it auto opens. Make leftclick check
+ to see which drops would be there and do what the first one would be.
+ 
+
+
+
+
+
+
+
